@@ -28,43 +28,49 @@
     </div>
 
     <header>
-      <nav>
-        <a href="#">
-          <div class="logo">
-            <img src="../asset/image1.png" class="image1" alt="image1" />
+      <nav class="navbar" aria-label="Navigation principale">
+        <a href="#" class="brand" aria-label="Nikèze — accueil">
+          <span class="logo">
+            <img src="../asset/nikeze-mark.png" alt="" class="image1" />
             Nikèze
-          </div>
+          </span>
         </a>
-        <div class="nav">
-          <div class="links">
-            <a href="#" class="link">Accueil</a>
-            <a href="#about" class="link">A propos</a>
-            <a href="" class="link">Contact</a>
-            <div class="dropdown">
-              <a class="more-link" style="cursor: pointer">more &darr;</a>
-              <div class="dropdown-menu">
-                <a href="#service" class="link">Services</a>
-                <a href="" class="link">Portfolio</a>
-                <a href="" class="link">Témoignages</a>
-              </div>
-            </div>
-          </div>
-          <div class="btn">
-            <a href="" class="cv">Télecharger <span>cv</span></a>
-          </div>
+
+        <div class="links">
+          <a href="#" class="link">Accueil</a>
+          <a href="#about" class="link">À propos</a>
+          <a href="#contact" class="link">Contact</a>
+          <a href="#service" class="link">Services</a>
+          <a href="#portfolio" class="link">Portfolio</a>
+          <a href="#testimonials" class="link">Témoignages</a>
         </div>
-        <label class="menu">&#9776;</label>
-        <div class="links-container">
-          <label class="close">&#10005;</label>
+
+        <a href="#" class="cv-button">Télécharger mon CV</a>
+
+        <button
+          class="menu"
+          type="button"
+          aria-label="Ouvrir le menu"
+          aria-controls="mobile-menu"
+          aria-expanded="false"
+        >
+          <span aria-hidden="true">&#9776;</span>
+        </button>
+
+        <div class="menu-backdrop"></div>
+
+        <div class="links-container" id="mobile-menu" aria-hidden="true">
+          <button class="close" type="button" aria-label="Fermer le menu">
+            <span aria-hidden="true">&#10005;</span>
+          </button>
+
           <a href="#" class="home-link">Accueil</a>
-          <a href="#about">A propos</a>
+          <a href="#about">À propos</a>
           <a href="#service">Services</a>
-          <a href="#">Portfolio</a>
-          <a href="#">Témoignages</a>
-          <a href="#">Contact</a>
-          <div class="btn">
-            <a href="" class="cv">Télecharger cv</a>
-          </div>
+          <a href="#portfolio">Portfolio</a>
+          <a href="#testimonials">Témoignages</a>
+          <a href="#contact">Contact</a>
+          <a href="#" class="cv-button mobile-cv-button">Télécharger mon CV</a>
         </div>
       </nav>
       <section class="hero-section">
@@ -161,7 +167,7 @@
       <section class="about-section" id="about">
         <div class="about-container">
           <div class="about-image">
-            <img src="../asset/image1.png" alt="" />
+            <img src="../asset/about-workspace.png" alt="" />
           </div>
           <div class="about-content">
             <span class="about-subtitle">A propos de moi</span>
@@ -176,7 +182,7 @@
             <div class="about-infos">
               <div class="about-info">
                 <div class="about-icon">
-                  <img src="../asset/Next.js.svg" alt="" />
+                  <img src="../asset/about-education.svg" alt="" />
                 </div>
                 <div class="about-info-text">
                   <h3>Etudiant en génie logiciel</h3>
@@ -185,20 +191,20 @@
               </div>
               <div class="about-info">
                 <div class="about-icon">
-                  <img src="../asset/Node.js.svg" alt="" />
+                  <img src="../asset/about-technology.svg" alt="" />
                 </div>
                 <div class="about-info-text">
-                  <h3>Etudiant en génie logiciel</h3>
-                  <p>université / formation</p>
+                  <h3>passionné de technologie</h3>
+                  <p>toujours en apprentissage</p>
                 </div>
               </div>
               <div class="about-info">
                 <div class="about-icon">
-                  <img src="../asset/React.svg" alt="" />
+                  <img src="../asset/about-availability.svg" alt="" />
                 </div>
                 <div class="about-info-text">
-                  <h3>Etudiant en génie logiciel</h3>
-                  <p>université / formation</p>
+                  <h3>Disponible pour collaborer</h3>
+                  <p>Projets freelance / Stage</p>
                 </div>
               </div>
             </div>
@@ -215,11 +221,11 @@
             Des solutions digitales adaptées à vos besoins
           </p>
         </div>
-        <div class="service-info"></div>
+        <div class="service-container"></div>
       </section>
     </main>
     <!-- slider -->
 
-    <script src="../js/script.js"></script>
+    <script type="module" src="../js/script.js"></script>
   </body>
 </html>
