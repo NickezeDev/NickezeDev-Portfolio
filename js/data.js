@@ -22,3 +22,26 @@ export const services = [
       "Aide dans vos projets numériques <br /> et chois technologiques.",
   },
 ];
+
+export const projets = [
+  {
+    image: "../asset/project-corporate-website.png",
+    title: "Site vitrine d'entreprise",
+    description: "HTML - CSS - JavaScript",
+  },
+  {
+    image: "../asset/project-dashboard-app.png",
+    title: "Application de gestion",
+    description: "React - Node.js - MongoDB",
+  },
+  {
+    image: "../asset/project-online-store-person-screen.png",
+    title: "Boutique en ligne",
+    description: "Next.js - Tailwind",
+  },
+  {
+    image: "../asset/project-personal-portfolio.png",
+    title: "Portfolio personnel",
+    description: "HTML - CSS - JavaScript",
+  },
+];

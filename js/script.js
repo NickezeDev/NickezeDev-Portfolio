@@ -1,4 +1,4 @@
-import { services } from "./data.js";
+import { services, projets } from "./data.js";
 
 const menuButton = document.querySelector(".menu");
 const closeButton = document.querySelector(".close");
@@ -8,6 +8,7 @@ const menuLinks = document.querySelectorAll(
   ".links-container a:not(.mobile-cv-button)",
 );
 const container = document.querySelector(".service-container");
+const container1 = document.querySelector(".projet-container");
 
 function openMenu() {
   sideBar.classList.add("active");
@@ -56,5 +57,14 @@ services.forEach((service) => {
   <img src="${service.image}" alt="${service.title}">
   <h3>${service.title}</h3>
   <p>${service.description}</p>
+</div>`;
+});
+
+projets.forEach((projet) => {
+  container1.innerHTML += `
+<div class="projet-card">
+  <img src="${projet.image}" alt="${projet.title}">
+  <h3>${projet.title}</h3>
+  <p>${projet.description}</p>
 </div>`;
 });
