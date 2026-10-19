@@ -9,6 +9,22 @@ const menuLinks = document.querySelectorAll(
 );
 const container = document.querySelector(".service-container");
 const container1 = document.querySelector(".projet-container");
+// const button = document.getElementById("lang-toggle");
+
+// function changerLangue(langue) {
+//   const anglais = document.querySelectorAll("[data-en]");
+//   const français = document.querySelectorAll("[data-fr]");
+//   anglais.forEach((element) => {
+//     if (langue === "en") {
+//       element.textContent = element.getAttribute("data-en");
+//     }
+//   });
+//   français.forEach((element) => {
+//     if (langue === "fr") {
+//       element.textContent = element.getAttribute("data-fr");
+//     }
+//   });
+// }
 
 function openMenu() {
   sideBar.classList.add("active");
@@ -68,3 +84,23 @@ projets.forEach((projet) => {
   <p>${projet.description}</p>
 </div>`;
 });
+
+// function changerLange() {
+//   const langue = document.documentElement.lang === "fr" ? "en" : "fr";
+
+//   document.documentElement.lang === langue;
+
+//   document.querySelectorAll("[data-fr] [data-en]").forEach((element) => {
+//     element.textContent = element.getAttribute("data-" + langue);
+//   });
+
+//   localStorage.setItem("langue", langue);
+// }
+
+// button.addEventListener("click", changerLange);
+// const langueSauvee = localStorage.getItem("langue") || "fr";
+// document.documentElement.lang = langueSauvee;
+
+// document.querySelectorAll("[data-fr] [data-en]").forEach((element) => {
+//   element.textContent = element.getAttribute("data-" + langueSauvee);
+// });

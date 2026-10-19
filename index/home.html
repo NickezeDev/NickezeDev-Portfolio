@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -37,18 +37,45 @@
         </a>
 
         <div class="links">
-          <a href="#" class="link">Accueil</a>
-          <a href="#about" class="link">À propos</a>
-          <a href="#service" class="link">Services</a>
-          <a href="#portfolio" class="link">Portfolio</a>
-          <a href="#testimonials" class="link">Témoignages</a>
-          <a href="#contact" class="link">Contact</a>
+          <a href="#" class="link" data-fr="Accueil" data-en="Home">Accueil</a>
+          <a href="#about" class="link" data-fr="À propos" data-en="About"
+            >À propos</a
+          >
+          <a href="#service" class="link" data-fr="Services" data-en="Services"
+            >Services</a
+          >
+          <a
+            href="#portfolio"
+            class="link"
+            data-fr="Portfolio"
+            data-en="Portfolio"
+            >Portfolio</a
+          >
+          <a
+            href="#testimonials"
+            class="link"
+            data-fr="Témoignages"
+            data-en="portefeuille"
+            >Témoignages</a
+          >
+          <a href="#contact" class="link" data-fr="Contact" data-en="contact"
+            >Contact</a
+          >
         </div>
 
-        <a href="../asset/test.pdf" download class="cv-button"
-          >Télécharger mon CV</a
+        <a
+          href="../asset/test.pdf"
+          download
+          class="cv-button"
+          data-fr="Télécharger mon CV"
+          data-en="Download cv"
         >
-
+          Télécharger mon CV
+        </a>
+        <div class="language-toggle">
+          <button onclick="changerLangue('fr')" style="color: black">FR</button>
+          <button onclick="changerLangue('en')" style="color: black">EN</button>
+        </div>
         <button
           class="menu"
           type="button"
@@ -66,39 +93,71 @@
             <span aria-hidden="true">&#10005;</span>
           </button>
 
-          <a href="#" class="home-link">Accueil</a>
-          <a href="#about">À propos</a>
-          <a href="#service">Services</a>
-          <a href="#portfolio">Portfolio</a>
-          <a href="#testimonials">Témoignages</a>
-          <a href="#contact">Contact</a>
+          <a href="#" class="home-link" data-fr="Accueil" data-en="Home"
+            >Accueil</a
+          >
+          <a href="#about" data-fr="À propos" data-en="About">À propos</a>
+          <a href="#service" data-fr="Services" data-en="Services">Services</a>
+          <a href="#portfolio" data-fr="Portfolio" data-en="Portfolio"
+            >Portfolio</a
+          >
+          <a href="#testimonials" data-fr="Témoignages" data-en="portefeuille"
+            >Témoignages</a
+          >
+          <a href="#contact" data-fr="Contact" data-en="contact">Contact</a>
           <a
             href="../asset/test.pdf"
             download
             class="cv-button mobile-cv-button"
+            data-fr="Télécharger mon CV"
+            data-en="Download cv"
             >Télécharger mon CV</a
           >
         </div>
       </nav>
       <section class="hero-section">
         <div class="main-content">
-          <span class="greet">Bonjour,je suis</span>
+          <span class="greet" data-fr="Bonjour, je suis" data-en="Hello, I am"
+            >Bonjour, je suis</span
+          >
           <div>
-            <h1>Nikèze <span class="name">Louvouezo</span></h1>
+            <h1 data-fr="Nikèze" data-en="Nikeze">
+              Nikèze <span class="name">Louvouezo</span>
+            </h1>
             <h2>
-              <span>Développeur Web </span>
+              <span data-fr="Développeur Web" data-en="web developer"
+                >Développeur Web</span
+              >
               <div class="bar"></div>
-              <span> Passionné par la Tech</span>
+              <span
+                data-fr="Passionné par la Tech"
+                data-en="Passionate about tech"
+                >Passionné par la Tech</span
+              >
             </h2>
           </div>
-          <p>
+          <p
+            data-fr="je crée des sites web modernes, rapides et performants. <br/>
+            Mon objectif est de transformer vos idées en solutions digitales
+            qui font la difference."
+            data-en="I create modern, fast and efficient websites. <br/> My goal is
+             to transform your ideas into digital solutions that make the difference"
+          >
             je crée des sites web modernes, rapides et performants. <br />
             Mon objectif est de transformer vos idées en solutions digitales
             <br />qui font la difference.
           </p>
           <div class="btns">
-            <a href="" class="btn1">Voir mes projets &rarr;</a>
-            <a href="" class="btn2">Me contacter</a>
+            <a
+              href=""
+              class="btn1"
+              data-fr="Voir mes projets -->"
+              data-en="See my project -->"
+              >Voir mes projets
+            </a>
+            <a href="" class="btn2" data-fr="Me contacter" data-en="Contact me"
+              >Me contacter</a
+            >
           </div>
         </div>
         <div class="img">
@@ -176,12 +235,26 @@
             <img src="../asset/about-workspace.png" alt="" />
           </div>
           <div class="about-content">
-            <span class="about-subtitle">A propos de moi</span>
-            <h2>Qui suis-je ?</h2>
-            <p class="about-description">
-              je m'appelle Nikèze Louvouezo, étudiant en génie logiciel. <br />
-              je suis passionné par le developpement web et les nouvelles
-              technologie. <br />
+            <span
+              class="about-subtitle"
+              data-fr="A propos de moi"
+              data-en="About me"
+              >A propos de moi</span
+            >
+            <h2 data-fr="Qui suis-je ?" data-en="Who am I ?">Qui suis-je ?</h2>
+            <p
+              class="about-description"
+              data-fr=" je m'appelle Nikèze Louvouezo, étudiant en génie logiciel.
+                je suis passionné par le developpement web et les nouvelles
+                technologie.
+                j'aime apprendre, relever des defis et créer des projets utiles et
+                innovants."
+              data-en="My name is Nikeze Louvouezo, a student in software engineering.
+                I am passionate about web development and new technologies. 
+                I like to learn, face challenges and create projects and innovative"
+            >
+              je m'appelle Nikèze Louvouezo, étudiant en génie logiciel. je suis
+              passionné par le developpement web et les nouvelles technologie.
               j'aime apprendre, relever des defis et créer des projets utiles et
               innovants.
             </p>
@@ -310,7 +383,7 @@
       </section>
     </main>
     <!-- slider -->
-
+    <script src="../index.js"></script>
     <script type="module" src="../js/script.js"></script>
   </body>
 </html>
