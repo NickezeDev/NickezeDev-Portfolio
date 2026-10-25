@@ -70,17 +70,17 @@ window.addEventListener("load", () => {
 services.forEach((service) => {
   container.innerHTML += `
 <div class="service-card">
-  <img src="${service.image}" alt="${service.title}">
-  <h3>${service.title}</h3>
-  <p>${service.description}</p>
+  <img src="${service.image}" alt="${service.titleFR}">
+  <h3 data-fr="${service.titleFR}" data-en="${service.titleEN}">${service.titleFR}</h3>
+  <p data-fr="${service.descriptionFR}" data-en="${service.descriptionEN}">${service.descriptionFR}</p>
 </div>`;
 });
 
 projets.forEach((projet) => {
   container1.innerHTML += `
 <div class="projet-card">
-  <img src="${projet.image}" alt="${projet.title}">
-  <h3>${projet.title}</h3>
+  <img src="${projet.image}" alt="${projet.titleFR}">
+  <h3 data-fr="${projet.titleFR}" data-en="${projet.titleEN}">${projet.titleFR}</h3>
   <p>${projet.description}</p>
 </div>`;
 });
