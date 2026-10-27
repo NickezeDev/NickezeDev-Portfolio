@@ -9,7 +9,7 @@ const menuLinks = document.querySelectorAll(
 );
 const container = document.querySelector(".service-container");
 const container1 = document.querySelector(".projet-container");
-// const button = document.getElementById("lang-toggle");
+const buttons = document.querySelectorAll(".button");
 
 // function changerLangue(langue) {
 //   const anglais = document.querySelectorAll("[data-en]");
@@ -58,6 +58,15 @@ document.addEventListener("keydown", (event) => {
   }
 });
 
+buttons.forEach((button) => {
+  button.addEventListener("click", () => {
+    buttons.forEach((btn) => {
+      btn.classList.remove("active");
+    });
+    button.classList.add("active");
+  });
+});
+
 window.addEventListener("load", () => {
   const animation = document.getElementById("intro-loader");
 
@@ -69,20 +78,20 @@ window.addEventListener("load", () => {
 
 services.forEach((service) => {
   container.innerHTML += `
-<div class="service-card">
+<article class="service-card">
   <img src="${service.image}" alt="${service.titleFR}">
   <h3 data-fr="${service.titleFR}" data-en="${service.titleEN}">${service.titleFR}</h3>
   <p data-fr="${service.descriptionFR}" data-en="${service.descriptionEN}">${service.descriptionFR}</p>
-</div>`;
+</article>`;
 });
 
 projets.forEach((projet) => {
   container1.innerHTML += `
-<div class="projet-card">
+<article class="projet-card">
   <img src="${projet.image}" alt="${projet.titleFR}">
   <h3 data-fr="${projet.titleFR}" data-en="${projet.titleEN}">${projet.titleFR}</h3>
   <p>${projet.description}</p>
-</div>`;
+</article>`;
 });
 
 // function changerLange() {
